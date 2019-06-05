@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Consultora Ally Prim </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-light flex-row-reverse">
+        <a class="navbar-brand" href="#"><img src="img/Logo.png" width="200"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="menu">
+            <a class="nav-link" href="tel:5567894923"> CONTACTO: (55) 6790 4923 </a>
+            <a class="nav-link" href="mailto:mail@allyprim.com.mx"> CONTACTO@ALLYPRIM.COM </a>
+        </div>
+    </nav>
+
+    <div id="contacto" class="container-fluid bg-hero">
+        <div class="row hero">
+            <div class="col-md-6">
+                <h1> ¿Quieres saber cómo comunicar para vender? </h1>
+            </div>
+            <div class="col-md-6 contacto">
+                <h2> Te regalamos un diagnóstico <br> exprés de tu empresa, solo <br> responde las siguientes preguntas </h2>
+                <form action="contacto.php" method="post">
+                    <input type="text" class="form-control" id="crisis" name="crisis" placeholder="¿Cómo han enfrentado una crisis de medios?" required>
+                    <input type="text" class="form-control" id="voceros" name="voceros"  placeholder="¿Tienen voceros entrenados para los medios?" required>
+                    <input type="text" class="form-control" id="influenciadores" name="influenciadores" placeholder="¿A cuántos micro influenciadores conoces?" required>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre:" required>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo:" required>
+                    <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Empresa:" required>
+                    <button type="submit" class="btn boton"> ENVIAR RESPUESTA </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-about-us">
+        <div class="row about-us">
+            <div class="col-md-12 d-flex flex-column justify-content-center">
+                <img src="img/Logo.png" width="280" style="margin: 20px auto">
+                <div class="mb-3 d-flex justify-content-center">
+                    <img src="img/Pantalla.svg" width="120" class="icono">
+                    <img src="img/Handshake.svg" width="120" class="icono">
+                    <img src="img/Tribuna.svg" width="120" class="icono">
+                </div>
+                <p class="mb-3"> En Consultora Ally Relaciones Públicas somos especialistas en el desarrollo de estrategias de comunicación, manejo de relaciones públicas, inteligencia de medios y PR digital.
+                Buscamos el bienestar hacia adentro y hacia afuera, hacemos sinergia para lograr los objetivos de nuestros clientes.
+                Buscamos diariamente la excelendia y la impecabilidad para mantener estándares profesionales y éticos inquebrantables
+                mediante el trabajo en equipo y el valor humano de quienes la integran. </p>
+                <h3> ¿Qué hacemos? Relaciones Públicas en Movimiento </h3>
+                <p> Un equipo de profesionales con una profunda pasión por la comunicación, la planeación estratégica y el desarrollo de contenido de valor para nuestras audiencias. La estrategia de relaciones públicas tradicional y digital ante la generación de noticias 24×7 sumado al fenómeno de la postverdad y fakenews, refuerza a través de impactos en el target, optimizando la inversión y contribuyendo significativamente a la construcción de las métricas de marca. </p>
+                <p> Construimos imagen y reputación. </p>
+                <p> Posicionamiento corporativo </p>
+                <p> Acercamos a nuestros clientes a sus audiencias clave. </p>
+                <p> Llegamos a medios nacionales, latinoamericanos y europeos. </p>
+                <a href="#contacto" class="btn boton mt-3" style="width: 260px; margin: auto"> Conócenos </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarDescripcion(d) {
+            var ids = ["mediatraining", "inteligencia", "plan", "pr", "lanzamientos", "manejo", "comunicacion", "corporativa"];
+            for(let i=0; i<ids.length; i++) {
+                let div = document.getElementById(ids[i]);
+                div.className = "ocultar-div";
+            }
+            var descripcion = document.getElementById(d);
+            descripcion.className = "mostrar-div";
+        }
+    </script>
+
+    <div class="container-fluid bg-Servicios">
+        <div class="row overlay">
+            <div class="col-md-6 lista-Servicios">
+                <ul>
+                    <li onclick="mostrarDescripcion('mediatraining')"><a href="Javascript:void(0);"> MEDIA TRAINING </a></li>
+                    <li onclick="mostrarDescripcion('inteligencia')"><a href="Javascript:void(0);"> INTELIGENCIA DE MEDIOS </a></li>
+                    <li onclick="mostrarDescripcion('plan')"><a href="Javascript:void(0);"> PLAN DE COMUNICACIÓN ESTRATÉGICA </a></li>
+                    <li onclick="mostrarDescripcion('pr')"><a href="Javascript:void(0);"> PR DIGITAL </a></li>
+                    <li onclick="mostrarDescripcion('lanzamientos')"><a href="Javascript:void(0);"> LANZAMIENTOS </a></li>
+                    <li onclick="mostrarDescripcion('manejo')"><a href="Javascript:void(0);"> MANEJO DE CRISIS </a></li>
+                    <li onclick="mostrarDescripcion('comunicacion')"><a href="Javascript:void(0);"> COMUNICACIÓN INTERNA </a></li>
+                    <li onclick="mostrarDescripcion('corporativa')"><a href="Javascript:void(0);"> COMUNICACIÓN CORPORATIVA </a></li>
+                </ul>
+                <a href="#contacto" class="btn boton"> Obtén tu diagnóstico GRATIS </a>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <!-- Lista de servicios -->
+                <div class="lista-descripcion">
+                    <div id="mediatraining" class="mostrar-div">
+                        <h2> MEDIA TRAINING </h2>
+                        <ul>
+                            <li> Coaching express </li>
+                            <li> Entrenamiento alta dirección </li>
+                            <li> Entrenamiento alta especialidad </li>
+                            <li> Entrenamiento para voceros </li>
+                        </ul>
+                    </div>
+                    <div id="eventos" class="ocultar-div">
+                        <h2> EVENTOS Y ACTIVIDADES CON PRENSA </h2>
+                        <ul>
+                            <li> Conferencias de prensa y otros eventos </li>
+                            <li> Boletines y comunicados  </li>
+                            <li> Artículos </li>
+                            <li> Speech </li>
+                            <li> Contenidos de valor </li>
+                        </ul>
+                    </div>
+                    <div id="inteligencia" class="ocultar-div">
+                        <h2> INTELIGENCIA DE MEDIOS  </h2>
+                        <ul>
+                            <li> Campañas y convocatorias  </li>
+                            <li> Goodwill meetings   </li>
+                            <li> Storytelling </li>
+                        </ul>
+                    </div>
+                    <div id="plan" class="ocultar-div">
+                        <h2> PLAN DE COMUNICACIÓN ESTRATÉGICA  </h2>
+                        <ul>
+                            <li> PR Plan </li>
+                            <li> PR Digital Plan </li>
+                            <li> Event Plan </li>
+                            <li> Project Plan </li>
+                            <li> Project Management </li>
+                        </ul>
+                    </div>
+                    <div id="pr" class="ocultar-div">
+                        <h2> PR DIGITAL </h2>
+                        <ul>
+                            <li> Redes sociales </li>
+                            <li> Medios web </li>
+                            <li> Contenidos de valor </li>
+                            <li> Influencers </li>
+                        </ul>
+                    </div>
+                    <div id="lanzamientos" class="ocultar-div">
+                        <h2> LANZAMIENTOS </h2>
+                        <ul>
+                            <li> Estrategia </li>
+                            <li> Difusión </li>
+                            <li> Warm-up </li>
+                            <li> Eventos corporativos  </li>
+                            <li> Eventos para audiencias clave </li>
+                        </ul>
+                    </div>
+                    <div id="manejo" class="ocultar-div">
+                        <h2> MANEJO DE CRISIS </h2>
+                        <ul>
+                            <li> Alianzas estratégicas </li>
+                            <li> Gestiones institucionales  </li>
+                            <li> Cabildeos </li>
+                            <li> Análisis de stackeholders </li>
+                        </ul>
+                    </div>
+                    <div id="comunicacion" class="ocultar-div">
+                        <h2> COMUNICACIÓN INTERNA </h2>
+                        <ul>
+                            <li> Campañas internas </li>
+                            <li> Implants </li>
+                            <li> Eventos corporativos </li>
+                        </ul>
+                    </div>
+                    <div id="corporativa" class="ocultar-div">
+                        <h2> COMUNICACIÓN CORPORATIVA </h2>
+                        <ul>
+                            <li> Planes de posicionamiento </li>
+                            <li> Campañas de mantenimiento </li>
+                            <li> Campañas visibilidad y cabildeo </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-laptop">
+        <div class="row overlay-blanco">
+            <div class="col-md-7 resultados">
+                <h2> Experiencia ALLY <br> ¿Qué esperar de Consultora ALLY? </h2>
+                <div class="d-flex m1">
+                    <i class="left-triangle"></i>
+                    <span> Contribuir al éxito de su empresa </span>
+                    <i class="right-triangle"></i>
+                </div>
+                <div class="d-flex m2">
+                    <i class="left-triangle"></i>
+                    <span> Para despegar de forma sostenida y posicionar a su empresa, producto o servicio </span>
+                    <i class="right-triangle"></i>
+                </div>
+                <div class="d-flex m3">
+                    <i class="left-triangle"></i>
+                    <span> Para buscar de manera directa o indirecta, el bien común de la sociedad </span>
+                    <i class="right-triangle"></i>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex flex-column justify-content-end pb-5">
+                <h2> ¿Para qué lo hacemos? </h2>
+                <p> Contribuir al éxito de su empresa. <br> Para despegar de forma sostenida y posicionar a su empresa, producto o servicios. <br>
+                    Para buscar de manera directa o indirecta, el bien común de la sociedad. <br> Velamos por los intereses de los clientes.
+                </p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Mejora de comunicación interna y externa. </li>
+                    <li> Manejar y prevenir crisis en tu negocio o empresa. </li>
+                    <li> Manejo de medios, convocatorias y de la comunicación interna de tu empresa. </li>
+                    <li> Control de medios de PR tradicionales y digitales. </li>
+                    <li> Ejecución de comunicación estratégica que puede generar ventas. </li>
+                </ul>
+                <a href="#contacto" class="btn boton"><strong> ALLY</strong>-ate con nosotros </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-clientes">
+        <div class="row">
+            <div class="col clientes">
+                <h2> Clientes que han <br> confiado en nosotros: </h2>
+                <div class="d-flex mb-4 mt-4 lista-clientes">
+                    <img src="img/baxter.png" class="cliente-icon">
+                    <img src="img/amway-home.png" class="cliente-icon">
+                    <img src="img/haemophilia-novo-nordisk.png" class="cliente-icon">
+                    <img src="img/Fundacion-Interamericana.png" class="cliente-icon">
+                    <img src="img/sano2.png" class="cliente-icon">
+                </div>
+                <h2 class="naranja"> Tú también confia en nosotros </h2>
+                <a href="tel:5567894923" class="btn boton"> Llámanos </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="container-fluid" style="padding: 20px 60px;">
+        <div class="row">
+            <div class="col-md-4">
+                <h5> CONSULTORA ALLY </h5>
+                <p> Construimos imagen y reputación <br> Posicionamiento corporativo. <br> Acercamos a nuestros clientes a sus audiencias clave. <br> Llegamos a medios nacionales, latinoamericanos y europeos. </p>
+                <a href="https://allyprim.com/main"> www.allyprim.com </a>
+                <h5> Síguenos en </h5>
+                <a href="#"> <img src="img/facebook.png" width="40"></a>
+                <a href="#"><img src="img/twitter.png" width="40"></a>
+                <a href="#"><img src="img/linked.png" width="40"></a>
+            </div>
+            <div class="col-md-3">
+              <h5> SERVICIOS </h5>
+                <ul>
+                    <li> Media training </li>
+                    <li> Eventos con prensa </li>
+                    <li> Inlan de comunicación </li>
+                    <li> PR Digital </li>
+                    <li> Lanzamientos </li>
+                    <li> Manejo de crisis </li>
+                    <li> Comunicación interna </li>
+                    <li> Comunicación corporativa </li>
+                </ul>
+            </div>
+            <div class="col-md-5 d-flex flex-column justify-content-right div-mapa">
+                <h5>¿Dónde nos encontramos?</h5>
+                <p> Avenida Insurgentes Sur 863, Colonia Nápoles, Delegación Benito Juárez, Ciudad de México.</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.5624691233766!2d-99.17716928557083!3d19.38808874712751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffacd800b3d9%3A0x9c8afb5400d78563!2sConsultora+Ally+Relaciones+P%C3%BAblicas!5e0!3m2!1ses!2smx!4v1559353599369!5m2!1ses!2smx" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
